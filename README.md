@@ -97,4 +97,4 @@
 
 ## 📄 ลิขสิทธิ์ (License)
 
-© 2026 My Portfolio | Designed by Your Name (Creative Media Student)
+© 2026 My Portfolio | Designed by Nattakarn (Creative Media Student)
