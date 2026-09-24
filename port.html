@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="th" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ผลงานสร้างสรรค์ (Portfolio) | Creative Media Student</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="แกลเลอรีผลงานสื่อนฤมิต (Creative Media Portfolio) 6 ชิ้นงานคัดสรร: Motion Graphics, UI/UX, ภาพยนตร์สั้น, 3D Art, ภาพถ่าย และ AI Interactive">
+  <meta name="keywords" content="Portfolio, ผลงาน, Motion Graphic, UI/UX Design, Video Editing, 3D Art, Photography, Creative Media">
+  <meta name="author" content="Your Name">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.6.0 via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap 5.3.3 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Custom Modular Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-spinner"></div>
+    <div class="loader-brand text-gradient-blue-yellow">CREATIVE MEDIA</div>
+    <span class="text-muted small mt-2">กำลังโหลดแกลเลอรีผลงาน...</span>
+  </div>
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="bg-ambient-layer" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- 1. NAVIGATION BAR -->
+  <header class="custom-navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-brand-link" aria-label="Creative Media Portfolio Home">
+        <div class="brand-icon-box">
+          <i class="fa-solid fa-shapes"></i>
+        </div>
+        <div>
+          <span class="brand-text-name">CREATIVE<span class="brand-accent-dot">.</span>MEDIA</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu-wrapper" id="navMenuWrapper" aria-label="Main Navigation">
+        <ul class="navbar-nav-list">
+          <li>
+            <a href="index.html" class="custom-nav-link">
+              <i class="fa-solid fa-house me-1 d-lg-none"></i> หน้าแรก
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="custom-nav-link">
+              <i class="fa-solid fa-user me-1 d-lg-none"></i> เกี่ยวกับเรา
+            </a>
+          </li>
+          <li>
+            <a href="skills.html" class="custom-nav-link">
+              <i class="fa-solid fa-bolt me-1 d-lg-none"></i> ทักษะความเชี่ยวชาญ
+            </a>
+          </li>
+          <li>
+            <a href="port.html" class="custom-nav-link active">
+              <i class="fa-solid fa-layer-group me-1 d-lg-none"></i> ผลงาน
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="custom-nav-link">
+              <i class="fa-solid fa-paper-plane me-1 d-lg-none"></i> ติดต่อ
+            </a>
+          </li>
+        </ul>
+
+        <div class="mobile-actions-wrapper d-lg-none">
+          <span class="text-muted small">สลับโหมดการแสดงผล</span>
+          <button class="theme-switch-btn" type="button" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Right Side Actions -->
+      <div class="d-flex align-items-center gap-3">
+        <button class="theme-switch-btn d-none d-lg-flex" type="button" aria-label="Toggle theme" title="สลับโหมด Dark/Light">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <a href="contact.html" class="btn-creative-yellow d-none d-md-inline-flex py-2 px-3 small">
+          <i class="fa-solid fa-comments"></i> พูดคุยโปรเจกต์
+        </a>
+
+        <button class="mobile-nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT: PORTFOLIO SECTION -->
+  <main class="page-main-wrap">
+    <section class="portfolio-section pt-0">
+      <div class="container">
+        <!-- Page Title Header -->
+        <div class="page-hero-banner reveal-init reveal-fade-up">
+          <span class="section-badge">
+            <i class="fa-solid fa-shapes"></i> แกลเลอรีผลงาน
+          </span>
+          <h1 class="section-heading">ผลงานสร้างสรรค์ (Portfolio)</h1>
+          <p class="section-subheading">
+            ผลงานคัดสรรด้านสื่อนฤมิต โมชันกราฟิก วิดีโอ ภาพถ่าย การออกแบบ UI/UX และศิลปะดิจิทัล
+          </p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="portfolio-filters reveal-init reveal-fade-up delay-100">
+          <button type="button" class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-border-all me-1"></i> ทั้งหมด (6)
+          </button>
+          <button type="button" class="filter-btn" data-filter="motion">
+            <i class="fa-solid fa-wand-magic-sparkles me-1"></i> Motion &amp; 3D
+          </button>
+          <button type="button" class="filter-btn" data-filter="uiux">
+            <i class="fa-solid fa-laptop-code me-1"></i> UI/UX &amp; Web
+          </button>
+          <button type="button" class="filter-btn" data-filter="video">
+            <i class="fa-solid fa-video me-1"></i> Video Production
+          </button>
+          <button type="button" class="filter-btn" data-filter="photo">
+            <i class="fa-solid fa-camera me-1"></i> Photography
+          </button>
+          <button type="button" class="filter-btn" data-filter="ai">
+            <i class="fa-solid fa-brain me-1"></i> AI &amp; Interactive
+          </button>
+        </div>
+
+        <!-- 6 Projects Responsive Grid -->
+        <div class="portfolio-grid">
+          <!-- Project 1: CyberPulse Motion Graphic -->
+          <div class="portfolio-item-col reveal-init reveal-fade-up delay-150" data-category="motion">
+            <div class="glass-card project-card">
+              <div class="project-thumb-box">
+                <img src="assets/images/project-1.svg" 
+                     alt="CyberPulse - Dynamic Brand Identity & Title Sequence" 
+                     class="project-thumb-img" 
+                     loading="lazy">
+                <div class="project-thumb-overlay">
+                  <button type="button" class="overlay-action-btn" data-project-id="1" aria-label="ดูรายละเอียดผลงาน CyberPulse">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category-tag">Motion Graphic</span>
+                <h3 class="project-title">CyberPulse: Dynamic Identity</h3>
+                <p class="project-description">
+                  การออกแบบอัตลักษณ์แบรนด์แบบเคลื่อนไหว และ Title Sequence สำหรับช่องเทคโนโลยี ด้วย After Effects &amp; Cinema 4D
+                </p>
+                <div class="project-footer">
+                  <span class="text-muted small"><i class="fa-regular fa-clock me-1"></i>3 สัปดาห์</span>
+                  <button type="button" class="project-detail-btn" data-project-id="1">
+                    <span>ดูผลงาน</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Aurora Studio UI/UX & Web -->
+          <div class="portfolio-item-col reveal-init reveal-fade-up delay-200" data-category="uiux">
+            <div class="glass-card project-card">
+              <div class="project-thumb-box">
+                <img src="assets/images/project-2.svg" 
+                     alt="Aurora Studio - Interactive Design System & Web Experience" 
+                     class="project-thumb-img" 
+                     loading="lazy">
+                <div class="project-thumb-overlay">
+                  <button type="button" class="overlay-action-btn" data-project-id="2" aria-label="ดูรายละเอียดผลงาน Aurora Studio">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category-tag">UI/UX &amp; Web Design</span>
+                <h3 class="project-title">Aurora Studio Design System</h3>
+                <p class="project-description">
+                  การออกแบบระบบ UI/UX Design System และเว็บไซต์สตรีมมิ่งเชิงประสบการณ์แบบ Interactive ด้วย Figma &amp; Front-end Code
+                </p>
+                <div class="project-footer">
+                  <span class="text-muted small"><i class="fa-regular fa-clock me-1"></i>4 สัปดาห์</span>
+                  <button type="button" class="project-detail-btn" data-project-id="2">
+                    <span>ดูผลงาน</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Echoes of Silence Short Film -->
+          <div class="portfolio-item-col reveal-init reveal-fade-up delay-250" data-category="video">
+            <div class="glass-card project-card">
+              <div class="project-thumb-box">
+                <img src="assets/images/project-3.svg" 
+                     alt="Echoes of Silence - Cinematic Short Film" 
+                     class="project-thumb-img" 
+                     loading="lazy">
+                <div class="project-thumb-overlay">
+                  <button type="button" class="overlay-action-btn" data-project-id="3" aria-label="ดูรายละเอียดผลงาน Echoes of Silence">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category-tag">Video Production</span>
+                <h3 class="project-title">Echoes of Silence Short Film</h3>
+                <p class="project-description">
+                  ภาพยนตร์สั้นเชิงทดลอง การจัดแสงแบบภาพยนตร์ และกระบวนการย้อมสี (Color Grading) ด้วย DaVinci Resolve Studio
+                </p>
+                <div class="project-footer">
+                  <span class="text-muted small"><i class="fa-regular fa-clock me-1"></i>1 เดือน</span>
+                  <button type="button" class="project-detail-btn" data-project-id="3">
+                    <span>ดูผลงาน</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Neon Dimension 3D Visual Art -->
+          <div class="portfolio-item-col reveal-init reveal-fade-up delay-300" data-category="motion">
+            <div class="glass-card project-card">
+              <div class="project-thumb-box">
+                <img src="assets/images/project-4.svg" 
+                     alt="Neon Dimension - 3D Visual Art & Virtual Exhibition" 
+                     class="project-thumb-img" 
+                     loading="lazy">
+                <div class="project-thumb-overlay">
+                  <button type="button" class="overlay-action-btn" data-project-id="4" aria-label="ดูรายละเอียดผลงาน Neon Dimension">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category-tag">3D &amp; Visual Art</span>
+                <h3 class="project-title">Neon Dimension Virtual 3D</h3>
+                <p class="project-description">
+                  การสร้างสภาพแวดล้อม 3 มิติ สไตล์ Cyberpunk และนิทรรศการเสมือนจริงแบบ 360 องศา ด้วย Blender &amp; Unreal Engine
+                </p>
+                <div class="project-footer">
+                  <span class="text-muted small"><i class="fa-regular fa-clock me-1"></i>3 สัปดาห์</span>
+                  <button type="button" class="project-detail-btn" data-project-id="4">
+                    <span>ดูผลงาน</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Urban Lightscape Photography -->
+          <div class="portfolio-item-col reveal-init reveal-fade-up delay-350" data-category="photo">
+            <div class="glass-card project-card">
+              <div class="project-thumb-box">
+                <img src="assets/images/project-5.svg" 
+                     alt="Urban Lightscape - Conceptual Street Photography" 
+                     class="project-thumb-img" 
+                     loading="lazy">
+                <div class="project-thumb-overlay">
+                  <button type="button" class="overlay-action-btn" data-project-id="5" aria-label="ดูรายละเอียดผลงาน Urban Lightscape">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category-tag">Photography</span>
+                <h3 class="project-title">Urban Lightscape Series</h3>
+                <p class="project-description">
+                  ซีรีส์ภาพถ่ายเชิงแนวคิด ศึกษาแสงและเงาในเวลากลางคืนของเมืองหลวง พร้อมการรีทัชไฟล์ RAW ใน Adobe Lightroom
+                </p>
+                <div class="project-footer">
+                  <span class="text-muted small"><i class="fa-regular fa-clock me-1"></i>2 สัปดาห์</span>
+                  <button type="button" class="project-detail-btn" data-project-id="5">
+                    <span>ดูผลงาน</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: DreamSync AI Art & Interactive Media -->
+          <div class="portfolio-item-col reveal-init reveal-fade-up delay-400" data-category="ai">
+            <div class="glass-card project-card">
+              <div class="project-thumb-box">
+                <img src="assets/images/project-6.svg" 
+                     alt="DreamSync - AI-Assisted Interactive Digital Art" 
+                     class="project-thumb-img" 
+                     loading="lazy">
+                <div class="project-thumb-overlay">
+                  <button type="button" class="overlay-action-btn" data-project-id="6" aria-label="ดูรายละเอียดผลงาน DreamSync">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-category-tag">AI &amp; Interactive Media</span>
+                <h3 class="project-title">DreamSync AI Experience</h3>
+                <p class="project-description">
+                  การผสานเทคโนโลยี Generative AI เข้ากับการออกแบบสื่อปฏิสัมพันธ์บนเว็บและงานสร้างสรรค์ศิลปะดิจิทัล
+                </p>
+                <div class="project-footer">
+                  <span class="text-muted small"><i class="fa-regular fa-clock me-1"></i>4 สัปดาห์</span>
+                  <button type="button" class="project-detail-btn" data-project-id="6">
+                    <span>ดูผลงาน</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Navigation Prompt CTA -->
+        <div class="text-center mt-5 reveal-init reveal-fade-up">
+          <p class="text-muted mb-3">สนใจร่วมงานหรือต้องการสอบถามรายละเอียดเพิ่มเติม?</p>
+          <a href="contact.html" class="btn-creative-yellow">
+            <i class="fa-solid fa-comments me-2"></i>
+            <span>ติดต่อเราได้ทันที (Contact Me)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="custom-footer">
+    <div class="footer-top-accent"></div>
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 footer-brand-col">
+          <div class="footer-brand-title">
+            <div class="brand-icon-box" style="width: 32px; height: 32px; font-size: 0.9rem;">
+              <i class="fa-solid fa-shapes"></i>
+            </div>
+            <span>CREATIVE<span class="text-warning">.</span>MEDIA</span>
+          </div>
+          <p class="footer-brand-bio">
+            พื้นที่แสดงผลงานสร้างสรรค์ด้านสื่อนฤมิต (Creative Media Portfolio) ที่มุ่งมั่นถ่ายทอดเรื่องราวผ่านภาพเคลื่อนไหว การออกแบบ UI/UX และโค้ดเทคโนโลยี
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-3 footer-links-col">
+          <h5>เมนูหลัก</h5>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html"><i class="fa-solid fa-angle-right"></i> หน้าแรก (Home)</a></li>
+            <li class="footer-link-item"><a href="about.html"><i class="fa-solid fa-angle-right"></i> เกี่ยวกับเรา (About)</a></li>
+            <li class="footer-link-item"><a href="skills.html"><i class="fa-solid fa-angle-right"></i> ทักษะความเชี่ยวชาญ (Skills)</a></li>
+            <li class="footer-link-item"><a href="port.html"><i class="fa-solid fa-angle-right"></i> ผลงานทั้งหมด (Port)</a></li>
+            <li class="footer-link-item"><a href="contact.html"><i class="fa-solid fa-angle-right"></i> ติดต่อเรา (Contact)</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-4 footer-links-col">
+          <h5>ช่องทางสื่อสาร</h5>
+          <ul class="footer-links-list">
+            <li class="footer-link-item">
+              <a href="mailto:tanapat.media@example.com"><i class="fa-regular fa-envelope"></i> tanapat.media@example.com</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://behance.net" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-behance"></i> Behance Portfolio</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub Repositories</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram Creative Feed</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">
+          &copy; 2026 My Portfolio
+        </p>
+        <p class="footer-designer">
+          Designed by <span>Your Name</span> (Creative Media Student)
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAIL INTERACTIVE MODAL (BOOTSTRAP 5) -->
+  <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-modal">
+        <div class="modal-header">
+          <div>
+            <span id="modalProjectCategory" class="project-category-tag mb-1">หมวดหมู่ผลงาน</span>
+            <h4 class="modal-title fw-bold" id="modalProjectTitle">ชื่อโปรเจกต์</h4>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-media-banner">
+            <img id="modalProjectImg" src="" alt="Project Preview" class="img-fluid">
+          </div>
+
+          <div class="modal-info-block">
+            <h6><i class="fa-solid fa-circle-info me-2"></i>รายละเอียดผลงาน</h6>
+            <p id="modalProjectDesc" class="text-muted leading-relaxed"></p>
+          </div>
+
+          <div class="row g-3 py-3 border-top border-bottom my-3">
+            <div class="col-sm-4">
+              <span class="text-muted small d-block">ลูกค้า / โอกาสสร้างสรรค์</span>
+              <strong id="modalProjectClient" class="text-main small">Creative Lab</strong>
+            </div>
+            <div class="col-sm-4">
+              <span class="text-muted small d-block">ระยะเวลาดำเนินงาน</span>
+              <strong id="modalProjectDuration" class="text-main small">3 สัปดาห์</strong>
+            </div>
+            <div class="col-sm-4">
+              <span class="text-muted small d-block">บทบาทหน้าที่ (Role)</span>
+              <strong id="modalProjectRole" class="text-main small">Lead Designer</strong>
+            </div>
+          </div>
+
+          <div class="modal-info-block mb-0">
+            <h6><i class="fa-solid fa-wrench me-2"></i>เครื่องมือและเทคโนโลยีที่ใช้</h6>
+            <div id="modalProjectTools" class="modal-tools-badge-list"></div>
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 pt-0 px-4 pb-4">
+          <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">ปิดหน้าต่าง</button>
+          <a href="contact.html" class="btn-creative-primary">
+            <span>สนใจงานสไตล์นี้ ปรึกษาได้เลย</span>
+            <i class="fa-solid fa-paper-plane ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll back to top" title="กลับขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

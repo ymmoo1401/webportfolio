@@ -1,0 +1,307 @@
+/* ==========================================================================
+   HERO SECTION (GRADIENT, ANIMATED ELEMENTS, PROFILE CARD, BADGES)
+   ========================================================================== */
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  padding-top: calc(var(--header-height) + 40px);
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Hero Background Gradient Overlay */
+.hero-gradient-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 10% 20%, rgba(0, 102, 255, 0.12) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(255, 184, 0, 0.12) 0%, transparent 45%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Status Pill */
+.hero-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px;
+  background: var(--bg-surface-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 210, 255, 0.3);
+  border-radius: var(--radius-full);
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.pulse-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #10b981;
+  border-radius: 50%;
+  position: relative;
+}
+
+.pulse-dot::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: rgba(16, 185, 129, 0.4);
+  animation: pulseDot 2s infinite ease-out;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.6); opacity: 1; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.status-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--text-main);
+}
+
+/* Hero Headings */
+.hero-greeting {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary-500);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+[data-bs-theme="dark"] .hero-greeting {
+  color: var(--primary-cyan);
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5.5vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.hero-role {
+  color: var(--text-main);
+}
+
+.hero-bio {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 2.25rem;
+  max-width: 580px;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 2.5rem;
+}
+
+/* Hero Quick Stats in Left Column */
+.hero-quick-stats {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-glass);
+}
+
+.stat-item h4 {
+  font-size: 1.65rem;
+  font-weight: 800;
+  margin: 0;
+  color: var(--text-main);
+}
+
+.stat-item p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Right Column: Hero Visual Showcase / Avatar */
+.hero-visual-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.avatar-frame {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-glow-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-cyan), var(--accent-400));
+  filter: blur(24px);
+  opacity: 0.45;
+  animation: spinGlow 14s linear infinite;
+  z-index: 1;
+}
+
+@keyframes spinGlow {
+  0% { transform: rotate(0deg) scale(0.96); }
+  50% { transform: rotate(180deg) scale(1.04); }
+  100% { transform: rotate(360deg) scale(0.96); }
+}
+
+.avatar-image-container {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  padding: 8px;
+  background: var(--bg-surface-glass);
+  backdrop-filter: blur(16px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  transition: transform var(--trans-spring);
+}
+
+.avatar-image-container:hover {
+  transform: scale(1.03);
+}
+
+.avatar-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Floating Glass Badges around Avatar */
+.floating-badge {
+  position: absolute;
+  z-index: 3;
+  padding: 12px 18px;
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: floatItem 6s ease-in-out infinite;
+  transition: transform var(--trans-base);
+}
+
+.floating-badge:hover {
+  transform: scale(1.08) translateY(-4px) !important;
+}
+
+.floating-badge-1 {
+  top: 10%;
+  left: -20px;
+  animation-delay: 0s;
+}
+
+.floating-badge-2 {
+  bottom: 8%;
+  right: -15px;
+  animation-delay: 2.5s;
+}
+
+@keyframes floatItem {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+.badge-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
+.badge-icon-blue {
+  background: rgba(0, 102, 255, 0.15);
+  color: var(--primary-500);
+}
+
+.badge-icon-yellow {
+  background: rgba(255, 184, 0, 0.2);
+  color: var(--accent-500);
+}
+
+.badge-text-primary {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-main);
+}
+
+.badge-text-secondary {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding-top: calc(var(--header-height) + 20px);
+    text-align: center;
+  }
+  .hero-bio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-cta-group {
+    justify-content: center;
+  }
+  .hero-quick-stats {
+    justify-content: center;
+  }
+  .hero-visual-wrapper {
+    margin-top: 40px;
+  }
+  .floating-badge-1 {
+    left: 10px;
+  }
+  .floating-badge-2 {
+    right: 10px;
+  }
+}

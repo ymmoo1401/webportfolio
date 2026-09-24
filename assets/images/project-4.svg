@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="p4Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050515" />
+      <stop offset="60%" stop-color="#0D1B2A" />
+      <stop offset="100%" stop-color="#1B263B" />
+    </linearGradient>
+    <linearGradient id="cubeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="100%" stop-color="#0052D4" />
+    </linearGradient>
+    <linearGradient id="cubeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDD00" />
+      <stop offset="100%" stop-color="#FF9900" />
+    </linearGradient>
+    <linearGradient id="cubeGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4364F7" />
+      <stop offset="100%" stop-color="#6FB1FC" />
+    </linearGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#p4Bg)" />
+
+  <!-- 3D Grid Floor Perspective -->
+  <g stroke="rgba(0, 210, 255, 0.25)" stroke-width="1.5">
+    <line x1="300" y1="220" x2="-100" y2="450" />
+    <line x1="300" y1="220" x2="50" y2="450" />
+    <line x1="300" y1="220" x2="180" y2="450" />
+    <line x1="300" y1="220" x2="300" y2="450" />
+    <line x1="300" y1="220" x2="420" y2="450" />
+    <line x1="300" y1="220" x2="550" y2="450" />
+    <line x1="300" y1="220" x2="700" y2="450" />
+    <!-- Horizontal floor lines -->
+    <line x1="200" y1="250" x2="400" y2="250" stroke-opacity="0.3" />
+    <line x1="140" y1="285" x2="460" y2="285" stroke-opacity="0.4" />
+    <line x1="70" y1="330" x2="530" y2="330" stroke-opacity="0.6" />
+    <line x1="-20" y1="385" x2="620" y2="385" stroke-opacity="0.8" />
+  </g>
+
+  <!-- Glowing Isometric 3D Cube Cluster -->
+  <g transform="translate(300, 170)" filter="url(#neonGlow)">
+    <!-- Top Face -->
+    <polygon points="0,-80 80,-35 0,10 -80,-35" fill="url(#cubeGrad2)" opacity="0.9" stroke="#FFF" stroke-width="1" />
+    <!-- Left Face -->
+    <polygon points="-80,-35 0,10 0,105 -80,60" fill="url(#cubeGrad1)" opacity="0.85" />
+    <!-- Right Face -->
+    <polygon points="0,10 80,-35 80,60 0,105" fill="url(#cubeGrad3)" opacity="0.95" />
+
+    <!-- Inner Core Glowing Sphere -->
+    <circle cx="0" cy="15" r="30" fill="#FFDD00" filter="url(#neonGlow)" />
+    
+    <!-- Orbiting rings -->
+    <ellipse cx="0" cy="15" rx="110" ry="38" fill="none" stroke="#00D2FF" stroke-width="2.5" stroke-dasharray="8 6" transform="rotate(-20)" />
+    <ellipse cx="0" cy="15" rx="130" ry="45" fill="none" stroke="#FFDD00" stroke-width="2" stroke-dasharray="12 8" transform="rotate(25)" />
+    
+    <!-- Floating tiny satellite cubes -->
+    <polygon points="-110,-40 -90,-30 -110,-20 -130,-30" fill="#FFDD00" />
+    <polygon points="120,40 140,50 120,60 100,50" fill="#00D2FF" />
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(430, 25)">
+    <rect width="140" height="32" rx="16" fill="rgba(255, 221, 0, 0.15)" stroke="#FFDD00" stroke-width="1.5" />
+    <text x="70" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFDD00" text-anchor="middle">3D &amp; VISUAL</text>
+  </g>
+</svg>

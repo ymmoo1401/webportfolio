@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="th" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เกี่ยวกับเรา (About Me) | Creative Media Student Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="ประวัติย่อ การศึกษา ความสนใจ และเป้าหมายในการทำงานของนักศึกษาสาขาสื่อนฤมิต (Creative Media)">
+  <meta name="keywords" content="About Me, ประวัติส่วนตัว, สื่อนฤมิต, Creative Media, การศึกษา, เป้าหมาย">
+  <meta name="author" content="Your Name">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.6.0 via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap 5.3.3 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Custom Modular Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-spinner"></div>
+    <div class="loader-brand text-gradient-blue-yellow">CREATIVE MEDIA</div>
+    <span class="text-muted small mt-2">กำลังโหลดหน้าประวัติ...</span>
+  </div>
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="bg-ambient-layer" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- 1. NAVIGATION BAR -->
+  <header class="custom-navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-brand-link" aria-label="Creative Media Portfolio Home">
+        <div class="brand-icon-box">
+          <i class="fa-solid fa-shapes"></i>
+        </div>
+        <div>
+          <span class="brand-text-name">CREATIVE<span class="brand-accent-dot">.</span>MEDIA</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu-wrapper" id="navMenuWrapper" aria-label="Main Navigation">
+        <ul class="navbar-nav-list">
+          <li>
+            <a href="index.html" class="custom-nav-link">
+              <i class="fa-solid fa-house me-1 d-lg-none"></i> หน้าแรก
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="custom-nav-link active">
+              <i class="fa-solid fa-user me-1 d-lg-none"></i> เกี่ยวกับเรา
+            </a>
+          </li>
+          <li>
+            <a href="skills.html" class="custom-nav-link">
+              <i class="fa-solid fa-bolt me-1 d-lg-none"></i> ทักษะความเชี่ยวชาญ
+            </a>
+          </li>
+          <li>
+            <a href="port.html" class="custom-nav-link">
+              <i class="fa-solid fa-layer-group me-1 d-lg-none"></i> ผลงาน
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="custom-nav-link">
+              <i class="fa-solid fa-paper-plane me-1 d-lg-none"></i> ติดต่อ
+            </a>
+          </li>
+        </ul>
+
+        <div class="mobile-actions-wrapper d-lg-none">
+          <span class="text-muted small">สลับโหมดการแสดงผล</span>
+          <button class="theme-switch-btn" type="button" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Right Side Actions -->
+      <div class="d-flex align-items-center gap-3">
+        <button class="theme-switch-btn d-none d-lg-flex" type="button" aria-label="Toggle theme" title="สลับโหมด Dark/Light">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <a href="contact.html" class="btn-creative-yellow d-none d-md-inline-flex py-2 px-3 small">
+          <i class="fa-solid fa-comments"></i> พูดคุยโปรเจกต์
+        </a>
+
+        <button class="mobile-nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT: ABOUT ME -->
+  <main class="page-main-wrap">
+    <section class="about-section pt-0">
+      <div class="container">
+        <!-- Page Title Header -->
+        <div class="page-hero-banner reveal-init reveal-fade-up">
+          <span class="section-badge">
+            <i class="fa-solid fa-user-astronaut"></i> ทำความรู้จักตัวตน
+          </span>
+          <h1 class="section-heading">เกี่ยวกับตัวฉัน (About Me)</h1>
+          <p class="section-subheading">
+            การผสมผสานระหว่างศาสตร์แห่งศิลปะการเล่าเรื่อง เข้ากับความล้ำหน้าของเทคโนโลยีดิจิทัลมีเดีย
+          </p>
+        </div>
+
+        <!-- 1. Intro Card (ประวัติย่อ) -->
+        <div class="glass-card about-intro-card reveal-init reveal-fade-up delay-100">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-8">
+              <p class="about-quote">
+                "งานออกแบบที่ดีไม่ใช่แค่การทำให้สิ่งต่างๆ ดูสวยงาม แต่คือการสร้างประสบการณ์ที่เข้าถึงใจผู้คน และเปิดมิติใหม่ในการสื่อสาร"
+              </p>
+              <p class="about-desc-para">
+                ฉันชื่อ <strong>ณัธกานต์ ว่องไว</strong> กำลังศึกษาอยู่ในสาขา <strong>สื่อนฤมิต (Creative Media)</strong> โดยให้ความสนใจเป็นพิเศษในการสร้างสรรค์สื่อดิจิทัลแบบปฏิสัมพันธ์ (Interactive Media), งานออกแบบภาพยนตร์สั้น, โมชันกราฟิก 2D/3D รวมถึงการออกแบบและพัฒนาส่วนต่อประสานผู้ใช้ (UI/UX Front-end) ที่ตอบโจทย์การใช้งานจริง
+              </p>
+              <p class="about-desc-para mb-0">
+                ฉันเชื่อว่าพลังของสื่อในยุคดิจิทัลไร้ขีดจำกัด เมื่อเรานำความคิดสร้างสรรค์มาบรรจบกับโค้ดและเทคโนโลยีปัญญาประดิษฐ์ (Generative AI) เราจึงสามารถสร้างผลงานที่มีเอกลักษณ์และสะกดสายตาผู้ชมได้อย่างแท้จริง
+              </p>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="p-4 rounded-4" style="background: rgba(0, 102, 255, 0.05); border: 1px dashed rgba(0, 102, 255, 0.3);">
+                <i class="fa-solid fa-graduation-cap display-4 text-primary mb-3"></i>
+                <h5 class="fw-bold mb-1">Creative Media</h5>
+                <p class="text-muted small mb-2">Bachelor of Fine &amp; Applied Arts</p>
+                <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold">
+                  <i class="fa-solid fa-star me-1"></i> Class of 2026
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Education & Interests/Goals Grid -->
+        <div class="row gy-4">
+          <!-- Left Column: Education Timeline (การศึกษา) -->
+          <div class="col-lg-6">
+            <div class="glass-card info-card reveal-init reveal-fade-left delay-200">
+              <div class="info-card-header">
+                <div class="info-header-icon icon-blue">
+                  <i class="fa-solid fa-school"></i>
+                </div>
+                <div>
+                  <h3 class="info-header-title">ประวัติการศึกษา (Education)</h3>
+                  <p class="text-muted small mb-0">เส้นทางการเรียนรู้และพัฒนาทักษะ</p>
+                </div>
+              </div>
+
+              <div class="education-timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <span class="timeline-badge">2023 - ปัจจุบัน (ปี 3)</span>
+                  <h4 class="timeline-title">ปริญญาตรี สาขาสื่อนฤมิต (Creative Media)</h4>
+                  <p class="timeline-subtitle">คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม</p>
+                  <p class="timeline-desc">
+                    ศึกษาด้าน Interactive Design, Digital Storytelling, Motion Graphics, Web &amp; Mobile UI/UX, Video Production และ 3D Modeling (GPAX 3.81)
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <span class="timeline-badge">2017 - 2022</span>
+                  <h4 class="timeline-title">มัธยมศึกษาตอนปลาย (สายวิทย์-คณิตศาสตร์)</h4>
+                  <p class="timeline-subtitle">โรงเรียนเมืองพลพิทยาคม</p>
+                  <p class="timeline-desc">
+                    ...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interests (ความสนใจ) & Goals (เป้าหมายในการทำงาน) -->
+          <div class="col-lg-6">
+            <div class="glass-card info-card reveal-init reveal-fade-right delay-200">
+              <div class="info-card-header">
+                <div class="info-header-icon icon-yellow">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                  <h3 class="info-header-title">ความสนใจ &amp; เป้าหมาย</h3>
+                  <p class="text-muted small mb-0">Passion &amp; Career Aspirations</p>
+                </div>
+              </div>
+
+              <!-- Interests Cloud (ความสนใจ) -->
+              <h6 class="fw-bold mb-3"><i class="fa-solid fa-fire me-2 text-warning"></i>ความสนใจเฉพาะด้าน (Interests)</h6>
+              <div class="interests-grid mb-4">
+                <div class="interest-tag">
+                  <i class="fa-solid fa-film"></i> Short Film &amp; Cinematography
+                </div>
+                <div class="interest-tag">
+                  <i class="fa-solid fa-cubes"></i> 3D Motion &amp; VFX
+                </div>
+                <div class="interest-tag">
+                  <i class="fa-solid fa-mobile-screen"></i> Micro-interactions UI
+                </div>
+                <div class="interest-tag">
+                  <i class="fa-solid fa-camera"></i> Street &amp; Portrait Photography
+                </div>
+                <div class="interest-tag">
+                  <i class="fa-solid fa-robot"></i> Generative AI Art &amp; Creative Code
+                </div>
+                <div class="interest-tag">
+                  <i class="fa-solid fa-vr-cardboard"></i> Virtual Reality (VR/AR)
+                </div>
+              </div>
+
+              <!-- Career Goals Box (เป้าหมายในการทำงาน) -->
+              <div class="goals-highlight-box">
+                <div class="goals-title">
+                  <i class="fa-solid fa-bullseye"></i>
+                  <span>เป้าหมายในการทำงาน (Career Goals)</span>
+                </div>
+                <p class="goals-text">
+                  มุ่งมั่นก้าวสู่การเป็น <strong>Creative Technologist &amp; Motion UI Specialist</strong> ระดับมืออาชีพ ที่สามารถเชื่อมโยงแนวคิดทางศิลปะเข้ากับเทคโนโลยีโปรแกรมมิ่ง พร้อมทั้งพัฒนานวัตกรรมสื่อดิจิทัลใหม่ ๆ ที่ตอบโจทย์ภาคธุรกิจและสร้างแรงบันดาลใจให้สังคม
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Navigation Prompt CTA -->
+        <div class="text-center mt-5 reveal-init reveal-fade-up">
+          <p class="text-muted mb-3">ต้องการดูทักษะความเชี่ยวชาญเพิ่มเติม?</p>
+          <a href="skills.html" class="btn-creative-primary">
+            <span>ไปดูทักษะความเชี่ยวชาญ (Skills)</span>
+            <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="custom-footer">
+    <div class="footer-top-accent"></div>
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 footer-brand-col">
+          <div class="footer-brand-title">
+            <div class="brand-icon-box" style="width: 32px; height: 32px; font-size: 0.9rem;">
+              <i class="fa-solid fa-shapes"></i>
+            </div>
+            <span>CREATIVE<span class="text-warning">.</span>MEDIA</span>
+          </div>
+          <p class="footer-brand-bio">
+            พื้นที่แสดงผลงานสร้างสรรค์ด้านสื่อนฤมิต (Creative Media Portfolio) ที่มุ่งมั่นถ่ายทอดเรื่องราวผ่านภาพเคลื่อนไหว การออกแบบ UI/UX และโค้ดเทคโนโลยี
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-3 footer-links-col">
+          <h5>เมนูหลัก</h5>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html"><i class="fa-solid fa-angle-right"></i> หน้าแรก (Home)</a></li>
+            <li class="footer-link-item"><a href="about.html"><i class="fa-solid fa-angle-right"></i> เกี่ยวกับเรา (About)</a></li>
+            <li class="footer-link-item"><a href="skills.html"><i class="fa-solid fa-angle-right"></i> ทักษะความเชี่ยวชาญ (Skills)</a></li>
+            <li class="footer-link-item"><a href="port.html"><i class="fa-solid fa-angle-right"></i> ผลงานทั้งหมด (Port)</a></li>
+            <li class="footer-link-item"><a href="contact.html"><i class="fa-solid fa-angle-right"></i> ติดต่อเรา (Contact)</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-4 footer-links-col">
+          <h5>ช่องทางสื่อสาร</h5>
+          <ul class="footer-links-list">
+            <li class="footer-link-item">
+              <a href="mailto:tanapat.media@example.com"><i class="fa-regular fa-envelope"></i> tanapat.media@example.com</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://behance.net" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-behance"></i> Behance Portfolio</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub Repositories</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram Creative Feed</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">
+          &copy; 2026 My Portfolio
+        </p>
+        <p class="footer-designer">
+          Designed by <span>Your Name</span> (Creative Media Student)
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll back to top" title="กลับขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

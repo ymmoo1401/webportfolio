@@ -1,0 +1,116 @@
+/* ==========================================================================
+   VARIABLES & DESIGN TOKENS
+   Creative Media Portfolio - Modern, Glassmorphism, Blue & Yellow Theme
+   ========================================================================== */
+
+:root {
+  /* Primary Palette: Blue / Cyan (Professional & Tech) */
+  --primary-50: #eff6ff;
+  --primary-100: #dbeafe;
+  --primary-200: #bfdbfe;
+  --primary-300: #93c5fd;
+  --primary-400: #60a5fa;
+  --primary-500: #0066ff;
+  --primary-600: #0052d4;
+  --primary-700: #1d4ed8;
+  --primary-800: #1e40af;
+  --primary-900: #1e3a8a;
+  --primary-cyan: #00d2ff;
+  --primary-sky: #38bdf8;
+
+  /* Accent Palette: Yellow / Amber (Creativity & Energy) */
+  --accent-50: #fefce8;
+  --accent-100: #fef9c3;
+  --accent-200: #fef08a;
+  --accent-300: #ffdd00;
+  --accent-400: #ffb800;
+  --accent-500: #f59e0b;
+  --accent-600: #d97706;
+  --accent-glow: rgba(255, 184, 0, 0.4);
+
+  /* Gradients */
+  --grad-primary: linear-gradient(135deg, #0052d4 0%, #4364f7 50%, #6fb1fc 100%);
+  --grad-accent: linear-gradient(135deg, #ffdd00 0%, #ff9900 100%);
+  --grad-blue-yellow: linear-gradient(135deg, #0066ff 0%, #00d2ff 60%, #ffb800 100%);
+  --grad-mesh: radial-gradient(at 0% 0%, rgba(0, 102, 255, 0.15) 0px, transparent 50%),
+               radial-gradient(at 100% 0%, rgba(255, 184, 0, 0.15) 0px, transparent 50%),
+               radial-gradient(at 100% 100%, rgba(0, 210, 255, 0.12) 0px, transparent 50%),
+               radial-gradient(at 0% 100%, rgba(255, 153, 0, 0.1) 0px, transparent 50%);
+
+  /* Typography */
+  --font-heading: 'Plus Jakarta Sans', 'Prompt', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Prompt', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing & Layout */
+  --header-height: 80px;
+  --section-padding: 100px 0;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --trans-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --trans-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --trans-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --trans-spring: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* ==========================================================================
+   LIGHT THEME (Default or Selected)
+   ========================================================================== */
+[data-bs-theme="light"], :root {
+  --bg-body: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-glass: rgba(255, 255, 255, 0.75);
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card-hover: rgba(255, 255, 255, 0.95);
+  --bg-subtle: #f1f5f9;
+
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  --text-inverse: #ffffff;
+
+  --border-glass: rgba(226, 232, 240, 0.8);
+  --border-focus: #0066ff;
+  
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 20px 35px -8px rgba(0, 102, 255, 0.12), 0 10px 15px -5px rgba(15, 23, 42, 0.04);
+  --shadow-glow-blue: 0 0 30px rgba(0, 102, 255, 0.25);
+  --shadow-glow-yellow: 0 0 30px rgba(255, 184, 0, 0.3);
+
+  --navbar-bg: rgba(255, 255, 255, 0.85);
+  --modal-bg: rgba(255, 255, 255, 0.95);
+}
+
+/* ==========================================================================
+   DARK THEME (Creative Cyber/Modern Studio Aesthetic)
+   ========================================================================== */
+[data-bs-theme="dark"] {
+  --bg-body: #090d16;
+  --bg-surface: #0f172a;
+  --bg-surface-glass: rgba(15, 23, 42, 0.72);
+  --bg-card: rgba(30, 41, 59, 0.6);
+  --bg-card-hover: rgba(30, 41, 59, 0.85);
+  --bg-subtle: #1e293b;
+
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-light: #64748b;
+  --text-inverse: #0f172a;
+
+  --border-glass: rgba(255, 255, 255, 0.12);
+  --border-focus: #00d2ff;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.7);
+  --shadow-glow-blue: 0 0 35px rgba(0, 102, 255, 0.4);
+  --shadow-glow-yellow: 0 0 35px rgba(255, 184, 0, 0.45);
+
+  --navbar-bg: rgba(9, 13, 22, 0.82);
+  --modal-bg: rgba(15, 23, 42, 0.95);
+}
